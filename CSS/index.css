@@ -1,0 +1,14 @@
+h1 {
+    color: crimson;
+    background-color: rgb(00, 200, 00);
+}
+
+button {
+    color: magenta;
+    background-color: cyan;
+}
+
+p {
+    color: olive;
+    background-color: orchid;
+}

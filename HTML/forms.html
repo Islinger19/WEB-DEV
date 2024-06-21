@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms tutorial</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/tacos">
+        <label for="Username">Type username</label>
+        <Input type="text" id="Username" placeholder="username" name="username"><br><br>
+        <label for="password">Type password</label>
+        <Input type="password" id="password" placeholder="password"><br><br>
+        <label for="pin">Type pin</label>
+        <Input type="number" id="pin" placeholder="Enter pin"><br><br>
+        <Input type="time"><br><br>
+        <div>
+            <label for="HTML">Do you want to learn HTML</label>
+            <input type="checkbox" name="HTML" id="HTML"><br><br>
+        </div>
+        <button> Submit </button>
+    </form>
+    <!-- https://www.google.com/search?q=hello -->
+    <form action="https://www.google.com/search">
+        <hr>
+        <hr>
+        <label for="search">Google search</label>
+        <Input type="text" id="search" placeholder="I feel lucky" name="q"><br><br>
+        <button> Submit Search on google </button>
+    </form>
+    <!-- https://www.youtube.com/results?search_query=BOY -->
+    <form action="https://www.youtube.com/results">
+        <hr>
+        <hr>
+        <label for="YT">Youtube search</label>
+        <Input type="text" id="YT" placeholder="YT" name="search_query"><br><br>
+        <button> Submit Search on Youtube </button>
+    </form>
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <p>
+            <label for="xs">XS:</label>
+            <input type="radio" name="size" id="xs" value="xs">
+            <label for="s">S</label>
+            <input type="radio" name="size" id="s" value="s">
+            <label for="m">M</label>
+            <input type="radio" name="size" id="m" value="m">
+        </p>
+        <p>
+            <label for="meal">Please Select an Entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="steak">Steak</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese">Amount of Cheese:</label>
+            <input type="range" id="cheese" min="1" max="100" value="75" name="cheese_level">
+        </p>
+
+        <p>
+            <label for="requests">Any Special Requests?</label>
+            <br>
+            <textarea id="requests" rows="10" cols="40" name="Requests?" placeholder="Type something here"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <p>
+            <label for="first">Enter First Name</label>
+            <input type="text" id="first" name="first" required>
+        </p>
+        <p>
+            <label for="user">Username</label>
+            <input type="text" id="user" name="username" minlength="5" maxlength="20" required>
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+        </p>
+        <p>
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website">
+        </p>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
