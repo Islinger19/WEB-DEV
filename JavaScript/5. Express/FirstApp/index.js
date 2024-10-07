@@ -41,7 +41,7 @@ app.get('/search', (req, res) => {
     }
 })
 
-app.get('*', (req, res) => {
+app.get(/(.*)/, (req, res) => {
     res.send(`I don't know that path!`)
 })
 
